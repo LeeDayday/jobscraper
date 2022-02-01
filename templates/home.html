@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>💻Job 다있소</title>
+    <style>
+      input::placeholder {
+        font-style: italic;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      button {
+        border: none;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: #4d85ff;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Job Search</h1>
+    <h3>지원하고자 하는 분야를 검색해주세요</h3>
+    <form action="/report" method="get">
+      <input placeholder="your next job?" required name="word" />
+      <button>Search!</button>
+    </form>
+  </body>
+</html>
